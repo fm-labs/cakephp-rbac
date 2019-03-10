@@ -1,5 +1,5 @@
 {
-    "name": "fm-labs/cakephp3-rbac",
+    "name": "fm-labs/cakephp-rbac",
     "description": "Role based access control plugin for CakePHP3",
     "type": "cakephp-plugin",
     "require": {
