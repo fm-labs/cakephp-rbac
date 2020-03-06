@@ -3,7 +3,7 @@
 namespace Rbac\Controller\Component;
 
 use Cake\Controller\Component;
-use Cake\Network\Exception\NotImplementedException;
+use Cake\Http\Exception\NotImplementedException;
 use Cake\ORM\TableRegistry;
 use User\Model\Table\PermissionsTable;
 use User\Model\Table\RolesTable;
@@ -51,9 +51,9 @@ class RbacComponent extends Component
      */
     public function initialize(array $config)
     {
-        $this->Users = TableRegistry::get($this->config('users_table'));
-        $this->Roles = TableRegistry::get($this->config('roles_table'));
-        $this->Permissions = TableRegistry::get($this->config('permissions_table'));
+        $this->Users = TableRegistry::getTableLocator()->get($this->getConfig('users_table'));
+        $this->Roles = TableRegistry::getTableLocator()->get($this->getConfig('roles_table'));
+        $this->Permissions = TableRegistry::getTableLocator()->get($this->getConfig('permissions_table'));
     }
 
     /**

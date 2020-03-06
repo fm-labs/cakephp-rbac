@@ -4,7 +4,7 @@ namespace Rbac\Auth;
 
 use Cake\Auth\BaseAuthorize;
 use Cake\Controller\ComponentRegistry;
-use Cake\Network\Request;
+use Cake\Http\ServerRequest as Request;
 use Rbac\Lib\Rbac;
 
 class RolesAuthorize extends BaseAuthorize
@@ -24,7 +24,7 @@ class RolesAuthorize extends BaseAuthorize
      * Checks user authorization.
      *
      * @param array $user Active user data
-     * @param \Cake\Network\Request $request Request instance.
+     * @param \Cake\Http\ServerRequest $request Request instance.
      * @return bool
      */
     public function authorize($user, Request $request)

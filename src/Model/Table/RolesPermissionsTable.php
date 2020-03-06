@@ -26,9 +26,9 @@ class RolesPermissionsTable extends Table
     {
         parent::initialize($config);
 
-        $this->table('user_roles_permissions');
-        $this->displayField('id');
-        $this->primaryKey('id');
+        $this->setTable('user_roles_permissions');
+        $this->setDisplayField('id');
+        $this->setPrimaryKey('id');
 
         $this->belongsTo('Roles', [
             'foreignKey' => 'role_id',

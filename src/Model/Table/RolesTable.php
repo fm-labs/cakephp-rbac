@@ -24,9 +24,9 @@ class RolesTable extends Table
     {
         parent::initialize($config);
 
-        $this->table('user_roles');
-        $this->displayField('name');
-        $this->primaryKey('id');
+        $this->setTable('user_roles');
+        $this->setDisplayField('name');
+        $this->setPrimaryKey('id');
     }
 
     /**

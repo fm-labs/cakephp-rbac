@@ -27,11 +27,11 @@ class Rbac
 
     public function __construct(array $config = [])
     {
-        $this->config($config);
+        $this->setConfig($config);
 
-        $this->Users = TableRegistry::get($this->config('users_table'));
-        $this->Roles = TableRegistry::get('User.Roles');
-        $this->Permissions = TableRegistry::get('User.Permissions');
+        $this->Users = TableRegistry::getTableLocator()->get($this->getConfig('users_table'));
+        $this->Roles = TableRegistry::getTableLocator()->get('User.Roles');
+        $this->Permissions = TableRegistry::getTableLocator()->get('User.Permissions');
     }
 
     /**

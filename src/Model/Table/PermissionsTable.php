@@ -24,9 +24,9 @@ class PermissionsTable extends Table
     {
         parent::initialize($config);
 
-        $this->table('user_permissions');
-        $this->displayField('name');
-        $this->primaryKey('id');
+        $this->setTable('user_permissions');
+        $this->setDisplayField('name');
+        $this->setPrimaryKey('id');
     }
 
     /**
