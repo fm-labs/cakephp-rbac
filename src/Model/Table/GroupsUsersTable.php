@@ -27,12 +27,12 @@ class GroupsUsersTable extends Table
         $this->belongsTo('Users', [
             'foreignKey' => 'user_id',
             'joinType' => 'INNER',
-            'className' => 'User.Users'
+            'className' => 'User.Users',
         ]);
         $this->belongsTo('Groups', [
             'foreignKey' => 'group_id',
             'joinType' => 'INNER',
-            'className' => 'User.Groups'
+            'className' => 'User.Groups',
         ]);
     }
 

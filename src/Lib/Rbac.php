@@ -41,7 +41,6 @@ class Rbac
      */
     public function getUser($modelName, $modelId)
     {
-
     }
 
     /**
@@ -51,7 +50,6 @@ class Rbac
      */
     public function getUserRoles($modelName, $modelId)
     {
-
     }
 
     /**
@@ -61,7 +59,6 @@ class Rbac
      */
     public function getUserPermissions($modelName, $modelId)
     {
-
     }
 
     /**
@@ -70,7 +67,6 @@ class Rbac
      */
     public function getRole($roleId)
     {
-
     }
 
     /**
@@ -79,7 +75,6 @@ class Rbac
      */
     public function getRoleUsers($roleId)
     {
-
     }
 
     /**
@@ -88,7 +83,6 @@ class Rbac
      */
     public function getRolePermissions($roleId)
     {
-
     }
 
     /**
@@ -97,7 +91,6 @@ class Rbac
      */
     public function getPermission($permId)
     {
-
     }
 
     /**
@@ -106,7 +99,6 @@ class Rbac
      */
     public function getPermissionRoles($permId)
     {
-
     }
 
     /**
@@ -115,17 +107,13 @@ class Rbac
      */
     public function getPermissionUsers($permId)
     {
-
     }
 
     public function userAddRole($user, $role)
     {
-
     }
 
     public function roleAddPermission($role, $permission)
     {
-
     }
-
 }

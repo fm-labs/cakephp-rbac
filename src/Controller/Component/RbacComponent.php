@@ -28,7 +28,7 @@ class RbacComponent extends Component
     protected $_defaultConfig = [
         'users_table' => 'User.Users',
         'roles_table' => 'User.Roles',
-        'permissions_table' => 'User.Permissions'
+        'permissions_table' => 'User.Permissions',
     ];
 
     /**
