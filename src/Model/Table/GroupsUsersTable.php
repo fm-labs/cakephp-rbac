@@ -1,18 +1,17 @@
 <?php
+declare(strict_types=1);
+
 namespace Rbac\Model\Table;
 
-use Cake\ORM\Query;
 use Cake\ORM\RulesChecker;
 use Cake\ORM\Table;
 use Cake\Validation\Validator;
-use User\Model\Entity\GroupsUser;
 
 /**
  * GroupsUsers Model
  */
 class GroupsUsersTable extends Table
 {
-
     /**
      * Initialize method
      *

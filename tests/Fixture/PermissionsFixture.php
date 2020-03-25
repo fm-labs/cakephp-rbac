@@ -9,7 +9,6 @@ use Cake\TestSuite\Fixture\TestFixture;
  */
 class PermissionsFixture extends TestFixture
 {
-
     /**
      * Table name
      *

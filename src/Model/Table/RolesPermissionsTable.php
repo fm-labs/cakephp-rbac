@@ -1,11 +1,11 @@
 <?php
+declare(strict_types=1);
+
 namespace Rbac\Model\Table;
 
-use Cake\ORM\Query;
 use Cake\ORM\RulesChecker;
 use Cake\ORM\Table;
 use Cake\Validation\Validator;
-use User\Model\Entity\RolesPermission;
 
 /**
  * RolesPermissions Model
@@ -15,7 +15,6 @@ use User\Model\Entity\RolesPermission;
  */
 class RolesPermissionsTable extends Table
 {
-
     /**
      * Initialize method
      *

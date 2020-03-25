@@ -1,4 +1,6 @@
 <?php
+declare(strict_types=1);
+
 namespace Rbac\Model\Entity;
 
 use Cake\ORM\Entity;
@@ -8,7 +10,6 @@ use Cake\ORM\Entity;
  */
 class GroupsUser extends Entity
 {
-
     /**
      * Fields that can be mass assigned using newEntity() or patchEntity().
      *
