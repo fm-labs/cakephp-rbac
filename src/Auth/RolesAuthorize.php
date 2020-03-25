@@ -28,7 +28,7 @@ class RolesAuthorize extends BaseAuthorize
      * @param \Cake\Http\ServerRequest $request Request instance.
      * @return bool
      */
-    public function authorize($user, Request $request)
+    public function authorize($user, Request $request): bool
     {
         $modelName = 'Users';
         $modelId = $user['id'];

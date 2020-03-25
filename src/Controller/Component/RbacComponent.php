@@ -47,7 +47,7 @@ class RbacComponent extends Component
     /**
      * {@inheritDoc}
      */
-    public function initialize(array $config)
+    public function initialize(array $config): void
     {
         $this->Users = TableRegistry::getTableLocator()->get($this->getConfig('users_table'));
         $this->Roles = TableRegistry::getTableLocator()->get($this->getConfig('roles_table'));
