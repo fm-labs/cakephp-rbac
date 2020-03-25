@@ -1,5 +1,5 @@
 <?php
-namespace User\Model\Table;
+namespace Rbac\Model\Table;
 
 use Cake\ORM\Query;
 use Cake\ORM\RulesChecker;

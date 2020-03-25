@@ -1,5 +1,5 @@
 <?php
-namespace User\Model\Entity;
+namespace Rbac\Model\Entity;
 
 use Cake\ORM\Entity;
 
